@@ -5,7 +5,7 @@ import NavbarMainButtons from "./NavbarMainButtons";
 
 function NavbarMiddle() {
   return (
-    <div className="flex items-center justify-between ">
+    <div className="sm:max-w-96 md:max-w-[1200px] flex items-center justify-between ">
       <Logo />
       <SearchBar />
       <NavbarMainButtons />
