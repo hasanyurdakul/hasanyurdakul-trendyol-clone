@@ -8,15 +8,15 @@ const NavbarMainButtons = () => {
     <div className="flex gap-5">
       <div className="flex text-xs items-center font-semibold">
         <PersonOutlineOutlinedIcon />
-        <p>Giriş Yap</p>
+        <p className="hidden md:inline">Giriş Yap</p>
       </div>
       <div className="flex text-xs items-center font-semibold">
         <FavoriteBorderOutlinedIcon />
-        <p>Favorilerim</p>
+        <p className="hidden md:inline">Favorilerim</p>
       </div>
       <div className="flex text-xs items-center font-semibold">
         <ShoppingCartOutlinedIcon />
-        <p>Sepetim</p>
+        <p className="hidden md:inline">Sepetim</p>
       </div>
     </div>
   );
