@@ -3,8 +3,8 @@ import React from "react";
 function PopularLinkGridItem({ gridItem }) {
   return (
     <div>
-      <h1 className="text-2xl">{gridItem.title}</h1>
-      <ul className="grid grid-cols-3 mt-6 ">
+      <h1 className="text-2xl line-clamp-2 md-c">{gridItem.title}</h1>
+      <ul className="grid grid-cols-1 md:grid-cols-3 mt-6 ">
         {gridItem.items.map((item, key) => (
           <a
             key={key}
