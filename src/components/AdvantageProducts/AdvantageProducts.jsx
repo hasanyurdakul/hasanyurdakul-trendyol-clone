@@ -17,11 +17,29 @@ function AdvantageProducts() {
             Tüm Ürünler <ChevronRightOutlined className="text-2xl" />
           </h1>
         </div>
-        <div className="flex gap-5">
+        {/* desktop */}
+        <div className="hidden md:flex gap-5">
           <Carousel
             responsive
             show={4.8}
             slide={2}
+            swiping={true}
+            rightArrow={<CarouselArrow direction={"right"} />}
+            leftArrow={<CarouselArrow direction={"left"} />}
+            infinite={true}
+          >
+            {popularProductsItemList.map((item, key) => (
+              <ProductCard item={item} key={key} />
+            ))}
+          </Carousel>
+        </div>
+
+        {/* mobile */}
+        <div className="flex md:hidden gap-5">
+          <Carousel
+            responsive
+            show={1}
+            slide={1}
             swiping={true}
             rightArrow={<CarouselArrow direction={"right"} />}
             leftArrow={<CarouselArrow direction={"left"} />}

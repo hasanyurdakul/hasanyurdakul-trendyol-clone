@@ -18,9 +18,10 @@ function FooterSection({ item }) {
       </div>
       {/* Pictures */}
       <div
-        className={`flex gap-2 mt-2 ${
-          item.title === "Mobil Uygulamalar" &&
-          "flex-col justify-start items-start"
+        className={`flex gap-2 mt-2  justify-start items-start ${
+          item.title === "Mobil Uygulamalar"
+            ? "flex-col "
+            : "md:flex-row flex-col "
         }`}
       >
         {item.pictures &&
