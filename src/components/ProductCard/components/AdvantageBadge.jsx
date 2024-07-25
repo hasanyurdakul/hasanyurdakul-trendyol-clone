@@ -3,7 +3,7 @@ import React from "react";
 function AdvantageBadge({ adventageRate }) {
   switch (adventageRate) {
     case 0:
-      return <div></div>;
+      return <></>;
     case 1:
       return (
         <img

@@ -11,9 +11,9 @@ function NavbarBottom() {
             <div key={index} className="flex mr-2">
               <div
                 className="flex text-xs font-semibold hover:border-tOrange-400 border-b-2 border-white justify-center 
-            items-center gap-1 cursor-pointer"
+            items-start gap-1 cursor-pointer"
               >
-                <p className="text-tGray-700 line-clamp-1 ">{item.name}</p>
+                <p className="text-tGray-700  line-clamp-1 ">{item.name}</p>
               </div>
               {item.isNew && (
                 <span

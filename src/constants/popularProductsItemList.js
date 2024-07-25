@@ -10,7 +10,7 @@ const popularProductsItemList = [
     badges: {
       fastShipping: true,
       freeShipping: true,
-      advantageRate: 1,
+      advantageRate: 2,
       bestSeller: true,
       awardTitle: "En Çok Satan 1. Ürün",
     },
